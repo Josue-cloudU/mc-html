@@ -19,7 +19,7 @@ h1 {
 header {
   border: 5px solid purple;
   width: 400px;
-  height: 200px;
+  height: 300px;
   background-color: grey;
 }
 
@@ -31,4 +31,49 @@ nav {
 a {
   text-decoration: none;
   border: 10px dashed black;
+  display:  inline-block;
+  width: 50px;
+  height: 50px;
 }
+
+/* TIPOS DE CAJA
+
+    inline -> Se posicionan uno al lado del otro sin poder modificar margenes
+    block -> abarcan el ancho posible con margenes
+    inline-block -> parecen inline pero si aceptan propiedades de ancho y alto
+
+ */
+
+/* SELECTORES */
+
+    /* de tipo */
+
+  /* h1, h2, p {
+    background-clip: inherit;
+  } */
+
+    /* de clase */
+    /* los estilos de clase tienen mas peso de los de tipo (prioridad) */
+  .destacado {
+    color: var(--color_oro);
+    font-weight: bold;
+    background-color: var(--color_rojo);
+  }
+
+  li {
+    color: var(--color_rojo);
+    background-color: aquamarine;
+  }
+    /* de id */
+  /* Los atributos id tienen mas prioridad de las clases */
+  #importante {
+    font-size: 30px;
+    background-color: azure;
+  }
+
+  .muyimportante {
+    font-size: 10px;
+    background-color: bisque;
+  }
+    /* de atributos  */
+    /* de hijos */
